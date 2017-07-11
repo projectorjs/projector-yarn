@@ -2,6 +2,7 @@
 
 exports[`.run() 1`] = `
 Object {
+  "code": 0,
   "stderr": "",
   "stdout": "WORKED --flag
 ",
