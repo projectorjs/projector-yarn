@@ -1,6 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`.run() 1`] = `
-"WORKED --flag
-"
+Object {
+  "stderr": "",
+  "stdout": "WORKED --flag
+",
+}
 `;

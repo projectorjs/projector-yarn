@@ -317,6 +317,12 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
+buffered-spawn@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/buffered-spawn/-/buffered-spawn-3.3.2.tgz#97b9846c4e446aa23320b4a94c5209edd32dacbb"
+  dependencies:
+    cross-spawn "^4.0.0"
+
 builtin-modules@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
@@ -414,12 +420,11 @@ core-js@^2.4.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.4.1.tgz#4de911e667b0eae9124e34254b53aea6fc618d3e"
 
-cross-spawn@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
+cross-spawn@^4.0.0:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-4.0.2.tgz#7b9247621c23adfdd3856004a823cbe397424d41"
   dependencies:
     lru-cache "^4.0.1"
-    shebang-command "^1.2.0"
     which "^1.2.9"
 
 cryptiles@2.x.x:
@@ -1551,12 +1556,6 @@ private@^0.1.6:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.7.tgz#68ce5e8a1ef0a23bb570cc28537b5332aba63ef1"
 
-projector@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/projector/-/projector-1.2.1.tgz#c4ef09d704ec29f1143d054e3dd91c30e098f163"
-  dependencies:
-    cross-spawn "^5.1.0"
-
 prr@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/prr/-/prr-0.0.0.tgz#1a84b85908325501411853d0081ee3fa86e2926a"
@@ -1708,16 +1707,6 @@ sax@^1.2.1:
 set-blocking@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
-
-shebang-command@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
-  dependencies:
-    shebang-regex "^1.0.0"
-
-shebang-regex@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
 
 shellwords@^0.1.0:
   version "0.1.0"

@@ -1,7 +1,7 @@
 // @flow
 'use strict';
 
-const {spawn} = require('projector');
+const bufferedSpawn = require('buffered-spawn');
 
 /*::
 type RunOptions = {
@@ -13,5 +13,5 @@ type RunOptions = {
 exports.run = (opts /*: RunOptions */) => {
   let args = ['run', opts.name, '-s', '--'];
   if (opts.flags) args = args.concat(opts.flags);
-  return spawn('yarn', args);
+  return bufferedSpawn('yarn', args);
 };
