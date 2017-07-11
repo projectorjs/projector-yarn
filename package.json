@@ -1,6 +1,6 @@
 {
   "name": "projector-yarn",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Run Yarn with ease",
   "main": "index.js",
   "repository": "projectorjs/projector-yarn",
