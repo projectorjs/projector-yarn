@@ -11,7 +11,7 @@ type RunOptions = {
 */
 
 exports.run = (opts /*: RunOptions */) => {
-  let args = ['run', opts.name, '--'];
+  let args = ['run', opts.name, '-s', '--'];
   if (opts.flags) args = args.concat(opts.flags);
   return spawn('yarn', args);
 };

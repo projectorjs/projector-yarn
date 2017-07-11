@@ -1,9 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`.run() 1`] = `
-"yarn run v0.24.6
-$ echo 'WORKED' --flag
-WORKED --flag
-Done in x.xxs.
+"WORKED --flag
 "
 `;
