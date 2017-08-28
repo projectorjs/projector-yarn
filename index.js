@@ -8,6 +8,8 @@ type RunOptions = {
   name: string,
   flags?: Array<string>,
   cwd?: string,
+  env?: Object,
+  stdio?: string | Array<*>,
 };
 */
 
@@ -20,5 +22,7 @@ exports.run = (opts /*: RunOptions */) => {
 
   return spawn('yarn', args, {
     cwd: opts.cwd,
+    env: opts.env,
+    stdio: opts.stdio,
   });
 };
