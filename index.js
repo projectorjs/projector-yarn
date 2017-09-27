@@ -4,6 +4,29 @@
 const spawn = require('projector-spawn');
 
 /*::
+type InstallOptions = {
+  flags?: Array<string>,
+  cwd?: string,
+  env?: Object,
+  stdio?: string | Array<*>,
+};
+*/
+
+exports.install = (opts /*: InstallOptions */) => {
+  let args = ['install'];
+
+  if (opts.flags) {
+    args = args.concat(opts.flags);
+  }
+
+  return spawn('yarn', args, {
+    cwd: opts.cwd,
+    env: opts.env,
+    stdio: opts.stdio,
+  });
+};
+
+/*::
 type RunOptions = {
   name: string,
   flags?: Array<string>,

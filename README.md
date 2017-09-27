@@ -14,6 +14,7 @@ yarn add --dev projector-yarn
 import * as yarn from 'projector-yarn';
 
 export async function build() {
+  await yarn.install({ flags: ['--production'] });
   await yarn.run({ name: 'script-name', flags: ['--dev'] });
 }
 ```
