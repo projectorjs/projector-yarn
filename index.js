@@ -14,7 +14,7 @@ type RunOptions = {
 */
 
 exports.run = (opts /*: RunOptions */) => {
-  let args = ['run', opts.name, '-s', '--'];
+  let args = ['run', opts.name];
 
   if (opts.flags) {
     args = args.concat(opts.flags);
